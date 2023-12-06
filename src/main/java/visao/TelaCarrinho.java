@@ -6,6 +6,7 @@ package visao;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 import java.util.Optional;
 
 import org.example.controller.CarrinhoController;
@@ -205,7 +206,10 @@ public class TelaCarrinho extends javax.swing.JFrame {
                 dtmProduto.addRow(rowData);
             }
 
-            txtTotal.setText(String.valueOf(carrinhoController.getTotalCompra()));
+            double totalCompra = carrinhoController.getTotalCompra();
+            DecimalFormat df = new DecimalFormat("#0.00");
+            String totalFormatado = df.format(totalCompra);
+            txtTotal.setText(totalFormatado);
         }
     }
 //GEN-LAST:event_btAdicionarActionPerformed

@@ -50,6 +50,8 @@ public class CarrinhoController {
         return totalCompra;
     }
 
+
+
     public String gerarRecibo() {
         StringBuilder recibo = new StringBuilder();
         recibo.append("Recibo da Compra:\n");
@@ -103,10 +105,10 @@ public class CarrinhoController {
                 System.out.println(recibo);
                 return true;
             } else {
-                System.out.println("Falhou: Carrinho vazio");
+                System.out.println("Falha: Carrinho vazio");
             }
         } else {
-            System.out.println("Pagamento falhou");
+            System.out.println("Falha no pagamento, tente novamente");
         }
         return false;
     }
