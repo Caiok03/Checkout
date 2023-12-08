@@ -1,7 +1,9 @@
 org\example\controller\LoginController.class
 org\example\TesteConexao.class
+visao\TelaCarrinho$6.class
 org\example\models\Carrinho.class
 org\example\models\Pedido.class
+org\example\repository\CarrinhoRepository.class
 visao\TelaLogin$1.class
 visao\Final$1.class
 org\example\repository\UsuarioRepository.class
